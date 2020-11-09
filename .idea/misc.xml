@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$USER_HOME$/Downloads/Video/INTERJCEIL/CHAPITRE5_PART2/TP6_CQRS_AXON_MService_StateStoredAggregate-master/TP6_CQRS_AXON_MService_StateStoredAggregate-master/ms-command-formation/pom.xml" />
+        <option value="$USER_HOME$/Downloads/Video/INTERJCEIL/CHAPITRE5_PART2/TP6_CQRS_AXON_MService_StateStoredAggregate-master/TP6_CQRS_AXON_MService_StateStoredAggregate-master/core-api/pom.xml" />
+        <option value="$USER_HOME$/Downloads/Video/INTERJCEIL/CHAPITRE5_PART2/TP6_CQRS_AXON_MService_StateStoredAggregate-master/TP6_CQRS_AXON_MService_StateStoredAggregate-master/ms-query-view/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-command-scolarite/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-command-bourse/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-command-bib/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-registry/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/test/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-config/pom.xml" />
+        <option value="$PROJECT_DIR$/core-api/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-query-view/pom.xml" />
+        <option value="$PROJECT_DIR$/ms-command-formation/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

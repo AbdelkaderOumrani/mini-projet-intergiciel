@@ -1,0 +1,24 @@
+package com.esi.coreapi.command;
+
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
+
+import java.util.Date;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+
+public class AddEtudiantCommandEta {
+
+    @TargetAggregateIdentifier
+    private String idEtablissement;
+    private Long idEtudiant;
+    private String nom;
+    private Date dateN;
+    private String promo;
+    private Date dateInscription;
+}

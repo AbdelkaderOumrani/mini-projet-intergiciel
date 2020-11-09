@@ -1,0 +1,64 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: route1
+          predicates:
+            - Path=/ms-formation/**
+          filters:
+            - RewritePath=/ms-formation/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fallbck-masformation
+                fallbackuri: forward:/defaultFormations
+          uri: http://localhost:8081/
+
+
+
+        - id: route2
+          predicates:
+            - Path=/ms-query/**
+          filters:
+            - RewritePath=/ms-query/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fallbck-masquery
+                fallbackuri: forward:/defaultQuery
+          uri: http://localhost:8082/
+
+        - id: route3
+          predicates:
+            - Path=/ms-scolarite/**
+          filters:
+            - RewritePath=/ms-scolarite/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fallbck-masscolarite
+                fallbackuri: forward:/defaultScolarite
+          uri: http://localhost:8083/
+
+        - id: route4
+          predicates:
+            - Path=/ms-bourse/**
+          filters:
+            - RewritePath=/ms-bourse/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fallbck-masbourse
+                fallbackuri: forward:/defaultBourse
+          uri: http://localhost:8084/
+
+
+
+        - id: route4
+          predicates:
+            - Path=/ms-bib/**
+          filters:
+            - RewritePath=/ms-bib/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fallbck-masbib
+                fallbackuri: forward:/defaultBib
+          uri: http://localhost:8085/
+
+
